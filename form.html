@@ -29,8 +29,62 @@
         </div>
         <div>
           <p>Which flavor of our cakes do you like the most?</p>
+          <select id="dropdown" name="flavor" required>
+            <option value="">--Please choose an option--</option>
+            <option value="Red Velvet">Red Velvet</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="salted caramel">Salted Caramel</option>
+            <option value="lemon-raspberry">Lemon Raspberry</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="carrot-hazelnut">Carrot Hazelnut</option>
+        </select>
         </div>
-
+        <div>
+          <p>What makes you prefer a cakeshop? (Check all that apply)</p>
+          <div>
+            <input type="checkbox" id="products" name="products" checked>
+            <label for="products">Variety of products</label>
+          </div>
+          <div> 
+            <input type="checkbox" id="price" name="price">
+            <label for="price">Price</label>
+          </div>
+          <div> 
+             <input type="checkbox" id="taste" name="taste">
+             <label for="taste">Taste of products</label>
+           </div>
+           <div> 
+             <input type="checkbox" id="staff" name="staff">
+             <label for="staff">Staff behavior</label>
+           </div>
+           <div> 
+             <input type="checkbox" id="others" name="others">
+             <label for="others">Other reasons. Please specify.</label><br/>
+             <textarea name="others" rows="2" cols="30"></textarea>
+           </div>
+        </div>
+        <div>
+            <p>Which shipping method works for you?</p>
+            <div>
+              <input type="radio" id="local-pickup" name="shipping" value="local-pickup" checked>
+              <label for="local-pickup">Local Pickup</label>
+            </div>
+            <div>
+              <input type="radio" id="local-delivery" name="shipping" value="local-delivery">
+              <label for="local-delivery">Local Delivery</label>
+            </div>
+            <div>
+              <input type="radio" id="nationwide-shipping" name="shipping" value="nationwide-shipping">
+              <label for="nationwide-shipping">Nationwide Shipping</label>
+            </div>
+        </div>
+        <div>
+          <p>Any comments or suggestions?</p>
+          <textarea name="comments" rows="5" cols="30" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div>
+          <input type="submit" />
+        </div>
 
 
 
